@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Chat room </title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script>
+        var channel = "{{channel}}";
+        localStorage.setItem('channel', channel);
+
+    </script>
+    <script src="/static/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+    <title>Channel {{channel}} </title>
+</head>
+
+<body>
+    <div class="chat" id="mensajes">
+    </div>
+
+
+    <div class="container" style="align-content: center;">
+        <input id="msg" autocomplete="off" autofocus placeholder="Write your message here!" type="text">
+        <button id="boton">Submit</button>
+        <a id="volver" href="{{url_for('index')}}">Back</a>
+    </div>
+
+</body>

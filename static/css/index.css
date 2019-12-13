@@ -1,0 +1,17 @@
+html,body{
+    background-image: url(/static/imgs/Books.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100%;
+    }
+
+h2 {
+    background-color: white;
+    border: black;
+    border-width: 3pt;
+}
+.chat{
+    background-color: white;
+    border:black;
+    border-width: 3pt;
+}
