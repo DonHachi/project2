@@ -46,7 +46,8 @@ def register():
 
 @app.route("/channel/<string:channel>", methods = ["GET"])
 def channel_creation(channel):
-        return render_template("channels.html", channel = channel, msg = msg[channel])
+    print(msg[channel])
+    return render_template("channels.html", channel = channel, msg = msg[channel])
 
 @socketio.on('send message')
 def newMessage(msg2):

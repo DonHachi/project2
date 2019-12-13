@@ -16,6 +16,9 @@
 </head>
 
 <body>
+        {% for data in msg %}
+        <h3>Username {{data.username}} at {{data.date}} : {{data.mensaje}}</h3>
+        {% endfor %}
     <div class="chat" id="mensajes">
     </div>
 
